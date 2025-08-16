@@ -1,6 +1,7 @@
 El juego se llama saltitos es un juego donde tu eres un cubo que va avanzando de manera automatica y tienes que saltar para ir esquivando los obstaculos que llegan a haber en los niveles, puede llegar  a ser eictivo y desesperante al mismo tiempo  
 
 JUGADOR:
+
 extends CharacterBody2D
 
 
@@ -57,6 +58,7 @@ extends Area2D
 
 
 MUERTE:
+
 func _on_body_entered(body):
 	if body.is_in_group("kill") :
 		$"..".death()
@@ -69,6 +71,7 @@ Detecta colisión con cuerpos físicos
 extends Area2D
 
 MUERTE POR AREA:
+
 func _on_area_entered(area: Area2D) -> void:
 	if area.is_in_group("kill") :
 		$"..".death()
@@ -79,6 +82,7 @@ Detecta colisión con otras áreas (Area2D)
  Se elimina a sí mismo
 
  ASSETS DEL JUEGO:
+ 
 <img width="373" height="746" alt="04b0688c0bfbf4609d1d4dd03525503da5ea2a2d" src="https://github.com/user-attachments/assets/794149ff-89e1-4a8c-b5be-82ebc1886737" />
 
 <img width="469" height="321" alt="Captura de pantalla 2025-08-11 041058" src="https://github.com/user-attachments/assets/dbc9e957-4dac-4134-ad43-324f0893dc8c" />
